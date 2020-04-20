@@ -1,24 +1,35 @@
 import React from "react";
 import logo from "./logo.svg";
 import "./App.css";
+import Greet from "./components/Greet";
+import Ngreet from "./components/Ngreet";
+import State from "./components/State";
+import Counter from "./components/Counter";
+import Functionclick from "./components/FunctionClick";
+import EventBind from "./components/EventBind";
+import ParentComponent from "./components/ParentComponent";
+import UserGreeting from "./components/UserGreeting";
+import List from "./components/List";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Hello World
-        </a>
-      </header>
+      <List />
+      <UserGreeting />
+      {/* <ParentComponent /> */}
+      {/* <EventBind /> */}
+      {/* <Functionclick /> */}
+      {/* <Counter />
+      <State /> */}
+      {/* <Greet name="Nitin" heroName="Avengers">
+        <p>This is children props</p>
+        <p>This is second children</p>
+      </Greet>
+      <Greet name="Diana" heroName="Messi Fan">
+        {" "}
+        <input type="submit" value="action" />
+      </Greet>{" "}
+      <Ngreet name="Nitin" heroName="Avengers" /> */}
     </div>
   );
 }
