@@ -5,7 +5,7 @@ function Stylesheet(props) {
   console.log(color);
   return (
     <div>
-      <h1 className={`${color} fontExcel`}>StyleSheets</h1>
+      <h1 className={`${color} fontExcel `}>StyleSheets</h1>
     </div>
   );
 }

@@ -12,12 +12,15 @@ import UserGreeting from "./components/UserGreeting";
 import List from "./components/List";
 import Stylesheet from "./components/Stylesheet";
 import Inline from "./components/Inline";
+import Form from "./components/Form";
 
 function App() {
   return (
     <div className="App">
-      <Stylesheet primary={true} />\
-      <Inline />
+      <Form />
+      {/* <Stylesheet primary={false} />
+      <br />
+      <Inline /> */}
       {/* <List />
       <UserGreeting /> */}
       {/* <ParentComponent /> */}

@@ -4,4 +4,15 @@
 
 .fontExcel {
   font-size: 72px;
+  border: 3px solid #73ad21;
+}
+
+.label {
+  float: left;
+  text-align: center;
+  width: 50%;
+}
+.position {
+  display: inline-block;
+  text-align: center;
 }
