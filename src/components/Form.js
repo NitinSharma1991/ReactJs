@@ -15,6 +15,7 @@ class Form extends Component {
     this.handleTopicChange = this.handleTopicChange.bind(this);
   }
   userNameChange(event) {
+    console.log(event.target.name);
     this.setState({
       username: event.target.value,
     });
@@ -29,35 +30,37 @@ class Form extends Component {
   handleTopicChange = (event) => {
     this.setState({ topic: event.target.value });
   };
+
+  handleSubmit = (event) => {
+    alert(`${this.state.username} ${this.state.comments} ${this.state.topic}`);
+    event.preventDefault();
+  };
   render() {
+    const { username, comments, topic } = this.state;
     return (
-      <form>
+      <form onSubmit={this.handleSubmit}>
         <div>
           <label className="position">Username</label>{" "}
-          <input
-            type="text"
-            value={this.state.username}
-            onChange={this.userNameChange}
-          />
+          <input type="text" value={username} onChange={this.userNameChange} />
         </div>
         <br /> <br />
         <div>
           <label>comments</label>
-          <textarea
-            value={this.state.comments}
-            onChange={this.handleComments}
-          ></textarea>
+          <textarea value={comments} onChange={this.handleComments}></textarea>
         </div>
         <br /> <br />
         <div>
           <label>Topic </label>
-          <select value={this.state.topic} onChange={this.handleTopicChange}>
+          <select value={topic} onChange={this.handleTopicChange}>
             <option>Angular</option>
             <option>React</option>
             <option>Vue</option>
           </select>
-          <div>{this.state.topic}</div>
         </div>
+        <br />
+        <div>{this.state.topic}</div>
+        <br />
+        <button type="submit">submit</button>
       </form>
     );
   }
