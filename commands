@@ -1,2 +1,5 @@
 npx create-react-app hello-world
 npm start
+
+delete package.json
+then run npm install . 
