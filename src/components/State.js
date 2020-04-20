@@ -10,17 +10,18 @@ class State extends Component {
   }
 
   changeMessage() {
-     this.setState({
-          message:"Kaka"
-      });
+    this.setState({
+      message: "Kaka",
+    });
   }
   render() {
     return (
-    <div>
-    <h1>Welcome {this.state.message} Sharma to Global Logic</h1>    
-    <button onClick= {()=>this.changeMessage()}>submit</button>
-    </div>
-    );}
+      <div>
+        <h1>Welcome {this.state.message} Sharma to Global Logic</h1>)
+        <button onClick={() => this.changeMessage()}>submit</button>
+      </div>
+    );
+  }
 }
 
-export default State;
+export default State
