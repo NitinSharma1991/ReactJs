@@ -13,11 +13,26 @@ import List from "./components/List";
 import Stylesheet from "./components/Stylesheet";
 import Inline from "./components/Inline";
 import Form from "./components/Form";
+import LifeCycleA from "./components/LifeCycleA";
+import FragmentDemo from "./components/FragmentDemo";
+import Table from "./components/Table";
+import PureComponents from "./components/PureComponents";
+import ParentComp from "./components/ParentComp";
+import RefDemo from "./components/RefDemo";
+import FocusInput from "./FocusInput";
+import PortalDemo from "./components/PortalDemo";
 
 function App() {
   return (
     <div className="App">
-      <Form />
+      <PortalDemo />
+      {/* <FocusInput /> */}
+      {/* <RefDemo /> */}
+      {/* <ParentComp /> */}
+      {/* <Table /> */}
+      {/* <FragmentDemo /> */}
+      {/* <LifeCycleA /> */}
+      {/* <Form /> */}
       {/* <Stylesheet primary={false} />
       <br />
       <Inline /> */}

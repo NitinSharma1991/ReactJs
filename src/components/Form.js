@@ -7,7 +7,7 @@ class Form extends Component {
     this.state = {
       username: "",
       comments: "",
-      topic: "",
+      topic: "Angular",
     };
 
     this.userNameChange = this.userNameChange.bind(this);
@@ -35,6 +35,12 @@ class Form extends Component {
     alert(`${this.state.username} ${this.state.comments} ${this.state.topic}`);
     event.preventDefault();
   };
+
+  hadnleEnter = (event) => {
+    console.log("In here");
+    if (event.key === "Enter" && event.shiftKey == false)
+      this.handleSubmit(event);
+  };
   render() {
     const { username, comments, topic } = this.state;
     return (
@@ -46,7 +52,11 @@ class Form extends Component {
         <br /> <br />
         <div>
           <label>comments</label>
-          <textarea value={comments} onChange={this.handleComments}></textarea>
+          <textarea
+            value={comments}
+            onChange={this.handleComments}
+            onKeyDown={this.hadnleEnter}
+          ></textarea>
         </div>
         <br /> <br />
         <div>
