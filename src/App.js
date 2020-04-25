@@ -25,13 +25,13 @@ import PortalDemo from "./components/PortalDemo";
 function App() {
   return (
     <div className="App">
-      <PortalDemo />
+      {/* <PortalDemo /> */}
       {/* <FocusInput /> */}
       {/* <RefDemo /> */}
       {/* <ParentComp /> */}
       {/* <Table /> */}
       {/* <FragmentDemo /> */}
-      {/* <LifeCycleA /> */}
+      <LifeCycleA />
       {/* <Form /> */}
       {/* <Stylesheet primary={false} />
       <br />

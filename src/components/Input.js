@@ -4,10 +4,11 @@ class Input extends Component {
   constructor(props) {
     super(props);
 
-   this.inputRef = React.createRef();
+    this.inputRef = React.createRef();
   }
   onfocus() {
     this.inputRef.current.focus();
+    console.log(this.inputRef.current.value);
   }
   render() {
     return (
